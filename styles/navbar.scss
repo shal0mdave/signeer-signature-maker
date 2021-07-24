@@ -1,0 +1,122 @@
+@import 'variables.scss';
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  nav {
+    width: 100%;
+    padding: 1.8em 0;
+    display: block;
+    // box-shadow: 0 2px 8px #2e2e2e10;
+    background: #fdeadd;
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 9999;
+  }
+  
+  nav .nav-header {
+    display: inline;
+  }
+  
+  nav .nav-header .nav-logo {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+  }
+  nav .nav-header .nav-logo img{
+    width: 100%;
+    max-width: 78px;
+  }
+  
+  nav .nav-btn {
+    display: none;
+  }
+  
+  nav .nav-links {
+    display: inline;
+    float: right;
+  }
+  nav .nav-links a{
+    display: inline-block;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    color: $base-color;
+    font-family: $secondary-font-family;
+    &:hover{
+      color: $link-color;
+    }
+  }
+  nav .nav-links .btn{
+    font-size: 18px;
+    font-family: $secondary-font-family;
+    background-color: $base-color;
+    color: #fff;
+    border-color: $base-color;
+    transition: 0.2s ease-in-out;
+    &:hover{
+      background-color: #fdeadd;
+      border-color: $base-color;
+      color: $base-color;
+    }
+  }
+  
+  nav #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    nav .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 12px;
+      top: 11px;
+    }
+    nav .nav-btn label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    nav .nav-btn label:hover,nav  #nav-check:checked ~ .nav-btn label {
+      background-color: #0000000f;
+    }
+    nav .nav-btn label span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid $base-color;
+    }
+    nav .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #eedcd0;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 72px;
+      left: 0px;
+      padding: 2.4em 2em;
+      text-align: center;
+    }
+    nav .nav-links a {
+      display: block;
+      color: $base-color;
+      width: 100%;
+      padding-bottom: 1em;
+    }
+    nav #nav-check:not(:checked) ~ .nav-links {
+      padding: 0px;
+      height: 0px;
+    }
+    nav #nav-check:checked ~ .nav-links {
+      height: auto;
+      overflow-y: auto;
+    }
+}

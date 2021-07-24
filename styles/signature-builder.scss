@@ -1,0 +1,102 @@
+@import 'variables.scss';
+
+.signature-builder{
+    padding: 10em 0;
+    background-color: #f0f8ff;
+
+    .text-container{
+        display: block;
+        margin-bottom: 5em;
+        h1{
+            font-family: $primary-font-family;
+            font-size: 4em;
+            color: $base-color;
+            line-height: 1.2;
+            margin-bottom: 0.4em;
+            text-align: center;
+            width: 70%;
+            margin: 14px auto;
+        }
+    }
+    h4{
+        font-family: $primary-font-family;
+        font-size: 2em;
+        color: $base-color;
+        line-height: 1.2;
+        margin-bottom: 0.6em;
+    }
+    .form-container{
+        background-color: #fff;
+        padding: 2em 4em;
+        box-shadow: 0 2px 8px #2e2e2e10;
+        label,
+        input,
+        button,
+        .ant-select-selection-item{
+            font-family: $secondary-font-family;
+            font-size: 1.2em;
+            color: $base-color;
+            width: 100%;
+        }
+        .ant-select-selection-item{
+            span{
+                font-size: 1.2em;
+            }
+        }
+        button{
+            color:#fff;
+            display: block;
+            width: 100%;
+            background-color: $base-color;
+            border-color: $base-color;
+            margin-top: 2em;
+            &:hover{
+                background-color: #fff;
+                color: $base-color;
+            }
+        }
+    }
+    .signature-container{
+        background-color: #fff;
+        padding: 0;
+        box-shadow: 0 2px 8px #2e2e2e10;
+        canvas{
+            border: solid 1px $base-color;  
+            width: 100%;
+            background: transparent;
+            position: relative;
+            display: none;
+        }
+        img{
+            width: 100%;
+        }
+        button{
+            color: #fff;
+            background-color: $base-color;
+            border-color: $base-color;
+            text-align: center;
+            float: right;
+            font-family: $secondary-font-family;
+            font-size: 1.2em;
+            &:hover{
+                background-color: #fff;
+                color: $base-color;
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        height: auto;
+        padding-top: 6em;
+        .text-container h1{
+            font-size: 1.8em;
+            width: 100%;
+        }
+        h4{
+            font-family: $primary-font-family;
+            font-size: 1.6em;
+        }
+        .form-container{
+           margin-bottom: 2em;
+        }
+    }
+}

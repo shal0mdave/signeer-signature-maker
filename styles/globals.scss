@@ -1,0 +1,63 @@
+/* font imports */
+@font-face{
+  font-family: "Regis Semi Bold";
+  src: url("../public/fonts/regis-semi-bold.ttf") format("truetype");
+}
+@font-face{
+  font-family: "Louis George Cafe Bold";
+  src: url("../public/fonts/louis-george-cafe-bold.ttf") format("truetype");
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* container */
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+ 	.container {
+	  max-width: 540px;
+	}
+  }
+  @media (min-width: 768px) {
+	.container {
+	  max-width: 720px;
+	}
+  }
+  @media (min-width: 992px) {
+	.container {
+	  max-width: 960px;
+	}
+  }
+  @media (min-width: 1200px) {
+	.container {
+	  max-width: 1140px;
+	}
+  }
+  @media (min-width: 1400px) {
+	.container {
+	  max-width: 1320px;
+	}
+  }
