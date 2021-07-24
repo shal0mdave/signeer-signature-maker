@@ -85,10 +85,13 @@
     }
     @media only screen and (max-width: 768px) {
         height: auto;
-        padding-top: 6em;
-        .text-container h1{
-            font-size: 1.8em;
-            width: 100%;
+        padding-top: 4em;
+        .text-container{
+            padding-bottom: 4.6em;
+            h1{
+                font-size: 2.4em;
+                width: 100%;
+            }
         }
         h4{
             font-family: $primary-font-family;

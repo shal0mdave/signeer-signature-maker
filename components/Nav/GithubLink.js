@@ -6,7 +6,7 @@ const { Link } = Typography;
 const GithubLink = () => {
 
 	return (
-		<Link href="https://github.com/shal0mdave" target="_blank">
+		<Link href="https://github.com/shal0mdave/signeer-signature-maker" target="_blank">
 			<GithubOutlined /> Github
 		</Link>
 	)

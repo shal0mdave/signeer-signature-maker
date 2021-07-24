@@ -17,6 +17,12 @@ const Layout = (props) => {
 				<meta name="description" content="Add a human touch to your digital signatures with ease." />
 				<meta name="keywords" content="signature, signer, text, image" />
 
+				<meta property="og:title" content="Welcome to Signeer - A Simple Signature Maker For Humans" />
+				<meta property="og:description" content="Add a human touch to your digital signatures with ease." />
+				<meta property="og:type" content="website" />
+				<meta property="og:url" content="https://signeer.vercel.app/" />
+				<meta property="og:image" content="https://signeer.vercel.app/img/logo.png" />
+
 				<link rel="icon" href="/favicon.ico" />
 				<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
 
