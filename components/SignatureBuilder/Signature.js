@@ -17,7 +17,11 @@ const Signature = (props) =>{
         tempLink.click();
     }
     
-    const drawSignature = (canvas, context) =>{
+
+
+    useEffect(() =>{
+        const canvas = canvasRef.current;
+        const context = canvas.getContext('2d');
 
         context.clearRect(0, 0, canvas.width, canvas.height)
         context.fillText('', canvas.width/2, canvas.height/2);
@@ -29,14 +33,8 @@ const Signature = (props) =>{
 
         let img = imgRef.current;
         img.src = context.canvas.toDataURL('image/png');
-    }
 
-    useEffect(() =>{
-        const canvas = canvasRef.current;
-        const context = canvas.getContext('2d');
-
-        drawSignature(canvas, context);
-    },[drawSignature])
+    },[props])
 
     return(
         <div className="signature-container">
