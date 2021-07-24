@@ -1,9 +1,9 @@
 /* font imports */
-@font-face{
+@font-face {
   font-family: "Regis Semi Bold";
   src: url("../public/fonts/regis-semi-bold.ttf") format("truetype");
 }
-@font-face{
+@font-face {
   font-family: "Louis George Cafe Bold";
   src: url("../public/fonts/louis-george-cafe-bold.ttf") format("truetype");
 }
@@ -37,27 +37,27 @@ a {
   margin-left: auto;
 }
 @media (min-width: 576px) {
- 	.container {
-	  max-width: 540px;
-	}
+  .container {
+    max-width: 540px;
   }
-  @media (min-width: 768px) {
-	.container {
-	  max-width: 720px;
-	}
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
   }
-  @media (min-width: 992px) {
-	.container {
-	  max-width: 960px;
-	}
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
   }
-  @media (min-width: 1200px) {
-	.container {
-	  max-width: 1140px;
-	}
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
-  @media (min-width: 1400px) {
-	.container {
-	  max-width: 1320px;
-	}
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
+}

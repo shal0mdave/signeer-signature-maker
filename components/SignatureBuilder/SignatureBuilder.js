@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Row, Col, Typography } from 'antd'; 
+import { Row, Col, Typography } from 'antd';
 import BuilderForm from './BuilderForm';
 import Signature from './Signature';
 
 const { Title } = Typography;
 
-const SignatureBuilder = () =>{
+const SignatureBuilder = () => {
     const [name, setName] = useState("JohnDoe.");
     const [size, setSize] = useState(60);
     const [colour, setColour] = useState('#000000');
@@ -25,14 +25,14 @@ const SignatureBuilder = () =>{
         setFont(values.font);
     }
 
-    return(
+    return (
         <section className="signature-builder" id="signature-builder" tabIndex="-1">
             <div className="container">
                 <div className="text-container">
                     <Title level={1}>Create and download your signature with ease.</Title>
                 </div>
-                <Row gutter={{lg: 32}}>
-                    <Col xs={{span:32}} lg={{span:11}}>
+                <Row gutter={{ lg: 32 }}>
+                    <Col xs={{ span: 24 }} lg={{ span: 12 }}>
                         <BuilderForm
                             fonts={fonts}
                             handleSubmit={_handleSubmit}
@@ -44,8 +44,8 @@ const SignatureBuilder = () =>{
                             }}
                         />
                     </Col>
-                    <Col xs={{span:32}} lg={{span:11}}>
-                        <Signature 
+                    <Col xs={{ span: 24 }} lg={{ span: 12 }}>
+                        <Signature
                             fill={colour}
                             size={size}
                             font={font}

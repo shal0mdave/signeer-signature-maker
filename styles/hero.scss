@@ -1,64 +1,64 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 /* header text */
-header{
-    padding-top: 2%;
-    padding-bottom: 2%;
-    background-color: #fdeadd;
-    .text-container{
-        display: block;
-        margin-bottom: 0em;
-        h1{
-            font-family: $primary-font-family;
-            font-size: 4.6em;
-            color: $base-color;
-            line-height: 1.4;
-            margin-bottom: 0.6em;
-            text-align: center;
-            width: 80%;
-            margin: 14px auto;
-        }
-        p{
-            font-family: $secondary-font-family;
-            font-size: 1.8em;
-            color: $base-color;
-            text-align: center;
-            width: 40%;
-            margin: 0px auto;
-        }
+header {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #fdeadd;
+  .text-container {
+    display: block;
+    margin-bottom: 0em;
+    h1 {
+      font-family: $primary-font-family;
+      font-size: 4.6em;
+      color: $base-color;
+      line-height: 1.4;
+      margin-bottom: 0.6em;
+      text-align: center;
+      width: 80%;
+      margin: 14px auto;
     }
-    .image-container img{
-        display: block;
-        margin: 0px auto;
-        width: 40%;
-        margin-top: 2.5em;
-        transform: translatey(0px);
-		animation: float 6s ease-in-out infinite;
+    p {
+      font-family: $secondary-font-family;
+      font-size: 1.8em;
+      color: $base-color;
+      text-align: center;
+      width: 40%;
+      margin: 0px auto;
     }
-    @keyframes float {
-		0%{
-			transform: translatey(0px);
-		}
-		50%{
-			transform: translatey(-10px);
-		}
-		100%{
-			transform: translatey(0px);
-		}
-	}
-    @media only screen and (max-width: 768px) {
-        height: auto;
-        padding-top: 3em;
-        .text-container h1{
-            font-size: 2.6em;
-            width: 100%;
-        }
-        .text-container p{
-            font-size: 1.6em;
-            width: 90%;
-        }
-        .image-container img{
-            width: 100%;
-        }
+  }
+  .image-container img {
+    display: block;
+    margin: 0px auto;
+    width: 40%;
+    margin-top: 2.5em;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
     }
+    50% {
+      transform: translatey(-10px);
+    }
+    100% {
+      transform: translatey(0px);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    height: auto;
+    padding-top: 3em;
+    .text-container h1 {
+      font-size: 2.6em;
+      width: 100%;
+    }
+    .text-container p {
+      font-size: 1.6em;
+      width: 90%;
+    }
+    .image-container img {
+      width: 100%;
+    }
+  }
 }

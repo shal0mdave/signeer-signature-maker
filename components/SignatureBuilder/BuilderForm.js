@@ -2,8 +2,8 @@ import { Typography, Form, Input, InputNumber, Select, Button, Row, Col } from '
 
 const { Title } = Typography;
 
-const BuilderForm = (props) =>{
-    return(
+const BuilderForm = (props) => {
+    return (
         <div className="form-container">
             <Title level={4}>Style your signature </Title>
             <Form
@@ -25,15 +25,15 @@ const BuilderForm = (props) =>{
                 >
                     <Input />
                 </Form.Item>
-                <Form.Item 
+                <Form.Item
                     label="Select a font"
                     name="font">
                     <Select>
-                        {props.fonts.map(font => <Select.Option key={font} value={font}><span style={{fontFamily:font}}>{font}</span></Select.Option>)}
+                        {props.fonts.map(font => <Select.Option key={font} value={font}><span style={{ fontFamily: font }}>{font}</span></Select.Option>)}
                     </Select>
                 </Form.Item>
-                <Row gutter={{lg: 32}}>
-                    <Col flex={3}>
+                <Row gutter={{ lg: 32 }}>
+                    <Col xs={{ span: 24 }} lg={{ span: 14 }}>
                         <Form.Item
                             label="Pick a colour"
                             name="colour"
@@ -41,7 +41,7 @@ const BuilderForm = (props) =>{
                             <Input type="color" />
                         </Form.Item>
                     </Col>
-                    <Col flex={2}>
+                    <Col xs={{ span: 24 }} lg={{ span: 10 }}>
                         <Form.Item
                             label="Font size"
                             name="size">

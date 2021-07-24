@@ -7,10 +7,10 @@ const Nav = () => {
 	return (
 		<nav>
 			<div className="container">
-				<input type="checkbox" id="nav-check"/>
+				<input type="checkbox" id="nav-check" />
 				<div className="nav-header">
 					<div className="nav-logo">
-						<img src={`/img/logo.svg`} alt="Signeer" />
+						<img src={`/img/logo.png`} alt="Signeer" />
 					</div>
 				</div>
 				<div className="nav-btn">

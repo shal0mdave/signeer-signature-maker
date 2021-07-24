@@ -2,8 +2,8 @@ import { Typography } from 'antd';
 
 const { Title } = Typography;
 
-const Hero = () =>{
-    return(
+const Hero = () => {
+    return (
         <header>
             <div className="container">
                 <div className="text-container">
