@@ -50,7 +50,7 @@ const Signature = (props) =>{
                 Download
             </Button>
             
-            <img ref={imgRef} />        
+            <img ref={imgRef} alt={props.text} />        
         </div>
     )
 }
