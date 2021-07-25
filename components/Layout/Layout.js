@@ -21,7 +21,7 @@ const Layout = (props) => {
 				<meta property="og:description" content="Add a human touch to your digital signatures with ease." />
 				<meta property="og:type" content="website" />
 				<meta property="og:url" content="https://signeer.vercel.app/" />
-				<meta property="og:image" content="https://signeer.vercel.app/img/logo.png" />
+				<meta property="og:image" content="https://signeer.vercel.app/img/logo-preview.jpg" />
 
 				<link rel="icon" href="/favicon.ico" />
 				<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
