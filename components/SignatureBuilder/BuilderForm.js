@@ -44,8 +44,9 @@ const BuilderForm = (props) => {
                     <Col xs={{ span: 24 }} lg={{ span: 10 }}>
                         <Form.Item
                             label="Font size"
-                            name="size">
-                            <InputNumber min={12} max={70} />
+                            name="size"
+                        >
+                            <Input type="number" max={60} />
                         </Form.Item>
                     </Col>
                 </Row>

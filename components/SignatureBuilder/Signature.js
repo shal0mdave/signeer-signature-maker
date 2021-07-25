@@ -14,6 +14,7 @@ const Signature = (props) => {
         let tempLink = document.createElement('a');
         tempLink.href = imgRef.current.src;
         tempLink.setAttribute('download', `${fileName}.png`);
+        tempLink.setAttribute('target', `blank`);
         tempLink.click();
     }
 
